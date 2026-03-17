@@ -28,7 +28,7 @@ class View(object):
 
         # Add your stuff here
 
-        self.page.add([])
+        # self.page.add([])
 
         self.page.update()
 
