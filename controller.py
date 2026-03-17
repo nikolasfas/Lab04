@@ -44,6 +44,9 @@ class SpellChecker:
             case _:
                 return None
 
+    def handleLanguage(self, language):
+        pass
+
 
     def printMenu(self):
         print("______________________________\n" +
@@ -62,3 +65,4 @@ def replaceChars(text):
     for c in chars:
         text = text.replace(c, "")
     return text
+

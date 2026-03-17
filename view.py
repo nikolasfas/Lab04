@@ -22,11 +22,20 @@ class View(object):
         self.__title = ft.Text("TdP 2024 - Lab 04 - SpellChecker ++", size=24, color="blue")
         self.__theme_switch = ft.Switch(label="Light theme", on_change=self.theme_changed)
         self.page.controls.append(
-            ft.Row(spacing=30, controls=[self.__theme_switch, self.__title, ],
+            ft.Row(spacing=30, controls =[self.__theme_switch, self.__title, ],
                    alignment=ft.MainAxisAlignment.START)
         )
 
         # Add your stuff here
+        self.tndLanguage = ft.Dropdown(
+            options=[
+                "Italian",
+                "English",
+                "Spanish"
+            ],
+            label="Language",
+            on_click = self.__controller.handleLanguage
+        )
 
         # self.page.add([])
 
